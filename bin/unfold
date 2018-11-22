@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Starting Unfold Code Generator..."
+if [ $# -eq 0 ]
+    then echo "Use Unfold to build business domain sections within the Chassis framework. Command format:"
+    echo "  bin/unfold <section_name> <type (choose cli, api, web)>"
+    exit
+fi
+
+chphpexe=$(which php)
+output=$($chphpexe $PWD/vendor/sypherlev/unfold/src/script.php $1 $2 $3)
+echo "$output"
+exit 0
