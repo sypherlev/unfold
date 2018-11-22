@@ -16,7 +16,7 @@
   "prefer-stable": true,
   "require": {
     "php": ">=7.0",
-    "sypherlev/chassiscore": "@dev",
+    "sypherlev/chassis-core": "@dev",
     "vlucas/phpdotenv": "^2.2"
   },
   "require-dev": {
