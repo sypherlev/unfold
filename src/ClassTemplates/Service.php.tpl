@@ -3,6 +3,7 @@
 namespace App\Domain\{sectionName};
 
 use App\Common\BasicService;
+use App\DBAL\UserData;
 use SypherLev\Chassis\Logger;
 
 class {sectionName}Service extends BasicService
@@ -15,7 +16,7 @@ class {sectionName}Service extends BasicService
     public function __construct()
     {
         parent::__construct();
-        $this->usersource = $this->objectCollection->get('user-local');
+        $this->usersource = $this->objectCollection->get(UserData::class);
         $this->logger = new Logger();
     }
 }
