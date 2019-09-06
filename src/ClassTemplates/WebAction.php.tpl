@@ -3,8 +3,6 @@
 namespace App\Domain\{sectionName};
 
 use SypherLev\Chassis\Action\WebAction;
-use SypherLev\Chassis\Middleware\Collection;
-use SypherLev\Chassis\Request\Web;
 
 class {sectionName}Action extends WebAction
 {
